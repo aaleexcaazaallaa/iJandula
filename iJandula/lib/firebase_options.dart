@@ -44,40 +44,42 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCccdAmRc3DC9lNEylvnqyUY3abIlp4TjE',
-    appId: '1:286196859062:web:e6a009bfeffc4af862a617',
-    messagingSenderId: '286196859062',
-    projectId: 'ijandula-17ffd',
-    authDomain: 'ijandula-17ffd.firebaseapp.com',
-    storageBucket: 'ijandula-17ffd.appspot.com',
-    measurementId: 'G-DBBY34G42V',
+    apiKey: 'AIzaSyC_NADK7e-lEI395zh-b04Jv4EoxyvT-ug',
+    appId: '1:800276532765:web:b22e72ab74ea6489e000f4',
+    messagingSenderId: '800276532765',
+    projectId: 'isenecafirebasealejandro',
+    authDomain: 'isenecafirebasealejandro.firebaseapp.com',
+    storageBucket: 'isenecafirebasealejandro.appspot.com',
+    measurementId: 'G-JD08LGG8JJ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD_N2s3r0oAe6ozfqljwFj4K9yLe8vO4_c',
-    appId: '1:286196859062:android:54075fee392de3f962a617',
-    messagingSenderId: '286196859062',
-    projectId: 'ijandula-17ffd',
-    storageBucket: 'ijandula-17ffd.appspot.com',
+    apiKey: 'AIzaSyCAIXHqPv7cQ7-VVPT7BAvQhI4eT1Q0qZM',
+    appId: '1:800276532765:android:f68ce54f90a56167e000f4',
+    messagingSenderId: '800276532765',
+    projectId: 'isenecafirebasealejandro',
+    storageBucket: 'isenecafirebasealejandro.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDpR7ME0BX6-ra3UnNaGsviplnUUeOtbwI',
-    appId: '1:286196859062:ios:9ec1b4054ed26c8e62a617',
-    messagingSenderId: '286196859062',
-    projectId: 'ijandula-17ffd',
-    storageBucket: 'ijandula-17ffd.appspot.com',
-    iosClientId: '286196859062-qtaj2gdsdhk28aqsrmsg4pughi9kde42.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBz6EN2SvNDHnSXwSz7V6kLhucPfLXiZUs',
+    appId: '1:800276532765:ios:c6bf3d0be7951ec6e000f4',
+    messagingSenderId: '800276532765',
+    projectId: 'isenecafirebasealejandro',
+    storageBucket: 'isenecafirebasealejandro.appspot.com',
+    androidClientId: '800276532765-4qbkeqvahj16rim1ikufgvl6in0q3073.apps.googleusercontent.com',
+    iosClientId: '800276532765-tbddpmfepv29edk5o05qbu3eu92nk3ri.apps.googleusercontent.com',
     iosBundleId: 'com.example.iseneca',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDpR7ME0BX6-ra3UnNaGsviplnUUeOtbwI',
-    appId: '1:286196859062:ios:3773aefe8fa1283962a617',
-    messagingSenderId: '286196859062',
-    projectId: 'ijandula-17ffd',
-    storageBucket: 'ijandula-17ffd.appspot.com',
-    iosClientId: '286196859062-q2dt1svb6muaon99vtgkf7imo4ljh5b3.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBz6EN2SvNDHnSXwSz7V6kLhucPfLXiZUs',
+    appId: '1:800276532765:ios:69440e065f1f3530e000f4',
+    messagingSenderId: '800276532765',
+    projectId: 'isenecafirebasealejandro',
+    storageBucket: 'isenecafirebasealejandro.appspot.com',
+    androidClientId: '800276532765-4qbkeqvahj16rim1ikufgvl6in0q3073.apps.googleusercontent.com',
+    iosClientId: '800276532765-657a5lclakb2nbachvs318bbja28g6is.apps.googleusercontent.com',
     iosBundleId: 'com.example.iseneca.RunnerTests',
   );
 }
