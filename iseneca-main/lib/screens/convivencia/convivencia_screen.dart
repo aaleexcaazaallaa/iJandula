@@ -30,6 +30,15 @@ class ConvivenciaScreen extends StatelessWidget {
               ),
             ),
           ),
+           GestureDetector(
+            onTap: () => Navigator.pushNamed(context, "reflexion_screen"),
+            child: const Card(
+              child: ListTile(
+                leading: FaIcon(FontAwesomeIcons.sadCry),
+                title: Text('Aula Reflexión'),
+              ),
+            ),
+          ),
         ],
       ),
     );
