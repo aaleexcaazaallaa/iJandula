@@ -83,6 +83,7 @@ class MyApp extends StatelessWidget {
         "convivencia_screen": (BuildContext context) => const ConvivenciaScreen(),
         "expulsados_screen": (BuildContext context) => const ExpulsadosScreen(),
         "mayores_screen": (BuildContext context) => const MayoresScreen(),
+        "reflexion_screen": (BuildContext context) => const ReflexionScreen(),
         "dace_screen": (BuildContext context) => const DaceScreen(),
         "personal_screen": (BuildContext context) => const PersonalScreen(),
         "listado_profesores_screen": (BuildContext context) =>

@@ -24,6 +24,7 @@ export 'package:iseneca/screens/alumnado/horario_detalles_alumnado_screen.dart';
 export 'package:iseneca/screens/convivencia/convivencia_screen.dart';
 export 'package:iseneca/screens/convivencia/expulsados_screen.dart';
 export 'package:iseneca/screens/convivencia/mayores_screen.dart';
+export 'package:iseneca/screens/convivencia/reflexion_screen.dart';
 
 //Archivos de DACE
 export 'package:iseneca/screens/dace/dace_screen.dart';
