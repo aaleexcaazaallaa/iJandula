@@ -12,7 +12,8 @@ class ReflexionScreen extends StatelessWidget{
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("REGISTRAR AULA DE REFLEXIÓN"),
+        title: const Text("AULA DE REFLEXIÓN",style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.blue,
       ),
       body: const _ReflexionScreen(),
     );
@@ -111,7 +112,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                         child: Container(
                           decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.50)),
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
+                            padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
                             child: Column(
                               children: [
                                 RadioListTile(
@@ -153,7 +154,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                           "¿Buen comportamiento?",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 30,
+                            fontSize: 25,
                             color: Colors.white,
                           ),
                         ),
@@ -163,12 +164,12 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                         child: Container(
                           decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.50)),
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
+                            padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
                             child: Column(
                               children: [
                                 RadioListTile(
                                   title: const Text("Sí", style: TextStyle(color:Colors.black)),
-                                  subtitle: const Text("El alumno se a portado correctamente", style: TextStyle(color:Colors.black)),
+                                  subtitle: const Text("El alumno se ha portado correctamente", style: TextStyle(color:Colors.black)),
                                   value: YesNo.si, 
                                   groupValue: buenComportamiento, 
                                   onChanged: (value) => setState(() {
@@ -206,7 +207,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                             "Profesor que lo ha enviado",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 30,
+                              fontSize: 25,
                               color: Colors.white,
                             ),
                           ),
@@ -218,7 +219,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                               "al aula de reflexión",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 30,
+                                fontSize: 25,
                                 color: Colors.white,
                               ),
                             ),
@@ -264,7 +265,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                             "Profesor que está en el",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 30,
+                              fontSize: 25,
                               color: Colors.white,
                             ),
                           ),
@@ -276,7 +277,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                               "aula de reflexión",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 30,
+                                fontSize: 25,
                                 color: Colors.white,
                               ),
                             ),
@@ -328,7 +329,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                       Padding(
                         padding: const EdgeInsets.only(left: 80,right: 80,top: 0 ,bottom: 40),
                         child: TextFormField(
-                          decoration: const InputDecoration(hintText: "Tu respuesta", enabledBorder: UnderlineInputBorder( borderSide: BorderSide(color: Colors.black, style: BorderStyle.solid), )),
+                          decoration: const InputDecoration(hintText: "Tu respuesta"),
                           cursorColor: Colors.black,
                           
                         ),
@@ -343,7 +344,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                   width: 300,
                   child: ElevatedButton(onPressed: () {
                     
-                  }, child: const Text("Enviar Formulario",style: TextStyle(fontSize: 20),)),
+                  }, child: const Text("Enviar Formulario",style: TextStyle(fontSize: 20, color: Colors.blue),)),
                 )
               ],
             ),
