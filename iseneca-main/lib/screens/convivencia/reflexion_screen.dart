@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:iseneca/models/models.dart';
 import 'package:iseneca/providers/alumnado_provider.dart';
@@ -203,15 +201,28 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                     children: [
                       const SizedBox(height: 20,),
                        const Padding(
-                         padding: EdgeInsets.all(20.0),
+                         padding: EdgeInsets.only(top: 20, left: 20, right: 20),
                          child: Text(
-                            "Profesor que lo ha enviado al aula de reflexión",
+                            "Profesor que lo ha enviado",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
                               color: Colors.white,
                             ),
                           ),
+                       ),
+                       const Padding(
+                         padding: EdgeInsets.only(bottom: 20),
+                         child: Center(
+                           child: Text(
+                              "al aula de reflexión",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                         ),
                        ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
@@ -248,15 +259,28 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                     children: [
                       const SizedBox(height: 20,),
                        const Padding(
-                         padding: EdgeInsets.all(20.0),
+                         padding: EdgeInsets.only(top: 20, left: 20, right: 20),
                          child: Text(
-                            "Profesor que está en el aula de reflexión",
+                            "Profesor que está en el",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
                               color: Colors.white,
                             ),
                           ),
+                       ),
+                       const Padding(
+                         padding: EdgeInsets.only(bottom: 20),
+                         child: Center(
+                           child: Text(
+                              "aula de reflexión",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 30,
+                                color: Colors.white,
+                              ),
+                            ),
+                         ),
                        ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
@@ -285,6 +309,42 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                   ),
                 ),
 
+                const SizedBox(height: 40),
+
+                Container(
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(20),color: Colors.blue),
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 40,),
+                      const Text(
+                          "Observaciones",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 30,
+                            color: Colors.white,
+                          ),
+                        ),
+                      const SizedBox(height: 20,),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 80,right: 80,top: 0 ,bottom: 40),
+                        child: TextFormField(
+                          decoration: const InputDecoration(hintText: "Tu respuesta", enabledBorder: UnderlineInputBorder( borderSide: BorderSide(color: Colors.black, style: BorderStyle.solid), )),
+                          cursorColor: Colors.black,
+                          
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 40),
+
+                SizedBox(
+                  height: 60,
+                  width: 300,
+                  child: ElevatedButton(onPressed: () {
+                    
+                  }, child: const Text("Enviar Formulario",style: TextStyle(fontSize: 20),)),
+                )
               ],
             ),
           )         
