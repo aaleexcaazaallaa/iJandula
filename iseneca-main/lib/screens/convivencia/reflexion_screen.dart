@@ -110,14 +110,13 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.50)),
+                          decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.85)),
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
                             child: Column(
                               children: [
                                 RadioListTile(
-                                  title: const Text("Sí", style: TextStyle(color:Colors.black)),
-                                  subtitle: const Text("El alumno ha realizado sus tareas correctamente", style: TextStyle(color:Colors.black)),
+                                  subtitle: const Text("Sí, el alumno ha realizado sus tareas correctamente", style: TextStyle(color:Colors.black), textAlign: TextAlign.justify),
                                   value: YesNo.si, 
                                   groupValue: haceTareas, 
                                   onChanged: (value) => setState(() {
@@ -125,8 +124,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                                   }),
                                 ),
                                 RadioListTile(
-                                  title: const Text("No", style: TextStyle(color:Colors.black)),
-                                  subtitle: const Text("El alumno no ha realizado sus tareas", style: TextStyle(color:Colors.black)),
+                                  subtitle: const Text("No, el alumno no ha realizado sus tareas", style: TextStyle(color:Colors.black), textAlign: TextAlign.justify),
                                   value: YesNo.no, 
                                   groupValue: haceTareas, 
                                   onChanged: (value) => setState(() {
@@ -162,14 +160,13 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.50)),
+                          decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.85)),
                           child: Padding(
                             padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
                             child: Column(
                               children: [
                                 RadioListTile(
-                                  title: const Text("Sí", style: TextStyle(color:Colors.black)),
-                                  subtitle: const Text("El alumno se ha portado correctamente", style: TextStyle(color:Colors.black)),
+                                  subtitle: const Text("Sí, el alumno se ha portado correctamente", style: TextStyle(color:Colors.black), textAlign: TextAlign.justify),
                                   value: YesNo.si, 
                                   groupValue: buenComportamiento, 
                                   onChanged: (value) => setState(() {
@@ -177,8 +174,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                                   }),
                                 ),
                                 RadioListTile(
-                                  title: const Text("No", style: TextStyle(color:Colors.black)),
-                                  subtitle: const Text("El alumno no se ha portado correctamente", style: TextStyle(color:Colors.black)),
+                                  subtitle: const Text("No, el alumno no se ha portado correctamente", style: TextStyle(color:Colors.black), textAlign: TextAlign.justify),
                                   value: YesNo.no, 
                                   groupValue: buenComportamiento, 
                                   onChanged: (value) => setState(() {
