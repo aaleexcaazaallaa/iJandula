@@ -54,7 +54,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                     children: [
                       const SizedBox(height: 20,),
                        const Padding(
-                         padding: EdgeInsets.all(20.0),
+                         padding: EdgeInsets.all(10.0),
                          child: Text(
                             "Alumno en aula",
                             style: TextStyle(
@@ -65,7 +65,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                           ),
                        ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
+                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 40),
                         child: DropdownButtonFormField(
                           decoration: InputDecoration(filled: true,fillColor: Colors.white.withOpacity(0.70), hintText: "Elige", hintStyle: const TextStyle(color: Colors.black)),
                           borderRadius: BorderRadius.circular(10),
@@ -207,7 +207,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                             "Profesor que lo ha enviado",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 25,
+                              fontSize: 23,
                               color: Colors.white,
                             ),
                           ),
@@ -219,14 +219,14 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                               "al aula de reflexión",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 25,
+                                fontSize: 23,
                                 color: Colors.white,
                               ),
                             ),
                          ),
                        ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
+                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 40),
                         child: DropdownButtonFormField(
                           decoration: InputDecoration(filled: true,fillColor: Colors.white.withOpacity(0.70), hintText: "Elige", hintStyle: const TextStyle(color: Colors.black)),
                           borderRadius: BorderRadius.circular(10),
@@ -284,7 +284,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                          ),
                        ),
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(80, 20, 80, 40),
+                        padding: const EdgeInsets.fromLTRB(40, 20, 40, 40),
                         child: DropdownButtonFormField(
                           decoration: InputDecoration(filled: true,fillColor: Colors.white.withOpacity(0.70), hintText: "Elige", hintStyle: const TextStyle(color: Colors.black)),
                           borderRadius: BorderRadius.circular(10),
@@ -327,7 +327,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                         ),
                       const SizedBox(height: 20,),
                       Padding(
-                        padding: const EdgeInsets.only(left: 80,right: 80,top: 0 ,bottom: 40),
+                        padding: const EdgeInsets.only(left: 40,right: 40,top: 0 ,bottom: 40),
                         child: TextFormField(
                           decoration: const InputDecoration(hintText: "Tu respuesta"),
                           cursorColor: Colors.black,
@@ -341,10 +341,14 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
 
                 SizedBox(
                   height: 60,
-                  width: 300,
+                  width: 350,
                   child: ElevatedButton(onPressed: () {
                     
-                  }, child: const Text("Enviar Formulario",style: TextStyle(fontSize: 20, color: Colors.blue),)),
+                  },
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                    ), child: const Text("Enviar Formulario",style: TextStyle(fontSize: 20, color: Colors.white),)
+                  )
                 )
               ],
             ),

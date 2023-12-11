@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iseneca/firebase_options.dart';
+import 'package:iseneca/providers/expulsados_provider.dart';
 import 'package:iseneca/providers/providers.dart';
+import 'package:iseneca/screens/convivencia/canet_screen.dart';
+import 'package:iseneca/screens/convivencia/incidencia_telefono_screen.dart';
 import 'package:iseneca/screens/convivencia/reflexion_screen.dart';
+import 'package:iseneca/screens/convivencia/screen_expulsados.dart';
 import 'package:iseneca/screens/screens.dart';
 import 'package:iseneca/service/services.dart';
 import 'package:provider/provider.dart';
@@ -61,6 +65,10 @@ class AppState extends StatelessWidget {
         ChangeNotifierProvider(
           create: (_) => DaceProvider(),
           lazy: false,
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ExpulsadosProvider(),
+          lazy: false,
         )
       ],
       child: const MyApp(),
@@ -85,6 +93,10 @@ class MyApp extends StatelessWidget {
         "expulsados_screen": (BuildContext context) => const ExpulsadosScreen(),
         "mayores_screen": (BuildContext context) => const MayoresScreen(),
         "reflexion_screen": (BuildContext context) => const ReflexionScreen(),
+        "comportamiento_alumno_screen": (BuildContext context) => const ComportamientoAlumnoScreen(),
+        "incidencia_telefono_screen": (BuildContext context) => const IncidenciaTelefonoScreen(),
+        "carnet_screen": (BuildContext context) => const CardScreen(),
+        "screen_expulsados": (BuildContext context) => const ScreenExpulsados(),
         "dace_screen": (BuildContext context) => const DaceScreen(),
         "personal_screen": (BuildContext context) => const PersonalScreen(),
         "listado_profesores_screen": (BuildContext context) =>
