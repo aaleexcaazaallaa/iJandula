@@ -112,7 +112,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                         child: Container(
                           decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.85)),
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
+                            padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                             child: Column(
                               children: [
                                 RadioListTile(
@@ -162,7 +162,7 @@ class _ReflexionScreenState extends State<_ReflexionScreen> {
                         child: Container(
                           decoration: BoxDecoration(borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(20) , bottomRight: Radius.circular(20)), color:Colors.white.withOpacity(0.85)),
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
+                            padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
                             child: Column(
                               children: [
                                 RadioListTile(
